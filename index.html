@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="evv amine.dev - Professional Web Development Agency. We build modern websites, landing pages, dashboards, and digital experiences.">
+  <meta name="keywords" content="web development, web agency, website design, frontend development, UI/UX design">
+  <meta name="author" content="evv amine.dev">
+  <meta property="og:title" content="evv amine.dev - Web Development Agency">
+  <meta property="og:description" content="Building Modern Websites & Digital Experiences">
+  <meta property="og:type" content="website">
+  <title>evv amine.dev | Web Development Agency</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader-container">
+      <div class="loader-logo">&lt;/&gt;</div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <p class="loader-text">Loading...</p>
+    </div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-code">&lt;/&gt;</span>
+        <span class="logo-text">evv amine.dev</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://discord.gg/8bZzDBst2w" target="_blank" class="nav-discord"><i class="fab fa-discord"></i></a>
+        <div class="nav-hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-logo-glow">
+        <span class="hero-char hero-angle-left">&lt;</span>
+        <span class="hero-char hero-slash">/</span>
+        <span class="hero-char hero-angle-right">&gt;</span>
+      </div>
+      <h1 class="hero-title">Building Modern Websites <span class="gradient-text">&amp; Digital Experiences</span></h1>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Request Service</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Us</span>
+        <h2 class="section-title">We Build Digital <span class="gradient-text">Experiences</span></h2>
+        <p class="section-desc">evv amine.dev is a modern web development agency crafting high-quality digital solutions. We turn your ideas into stunning, functional websites that drive results.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card" data-count="100">
+          <div class="stat-icon"><i class="fas fa-code"></i></div>
+          <h3 class="stat-number"><span class="counter" data-target="100">0</span>+</h3>
+          <p class="stat-label">Projects</p>
+        </div>
+        <div class="stat-card" data-count="50">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <h3 class="stat-number"><span class="counter" data-target="50">0</span>+</h3>
+          <p class="stat-label">Clients</p>
+        </div>
+        <div class="stat-card" data-count="24">
+          <div class="stat-icon"><i class="fas fa-headset"></i></div>
+          <h3 class="stat-number"><span class="counter" data-target="24">0</span>/7</h3>
+          <p class="stat-label">Support</p>
+        </div>
+        <div class="stat-card" data-count="99">
+          <div class="stat-icon"><i class="fas fa-star"></i></div>
+          <h3 class="stat-number"><span class="counter" data-target="99">0</span>%</h3>
+          <p class="stat-label">Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section services-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Our Services</span>
+        <h2 class="section-title">What <span class="gradient-text">We Offer</span></h2>
+        <p class="section-desc">From stunning websites to complex systems, we deliver premium digital solutions tailored to your needs.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-globe"></i></div>
+          <h3>Website Development</h3>
+          <p>Full-stack websites with modern frameworks, optimized for speed and SEO.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-file-alt"></i></div>
+          <h3>Landing Pages</h3>
+          <p>High-converting landing pages with stunning design and smooth animations.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Dashboard Systems</h3>
+          <p>Data-rich dashboards with real-time analytics and intuitive interfaces.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>User-centered designs that balance aesthetics with seamless functionality.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fab fa-discord"></i></div>
+          <h3>Discord Bots</h3>
+          <p>Custom Discord bots with moderation, economy, music, and utility features.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-gamepad"></i></div>
+          <h3>FiveM Web Solutions</h3>
+          <p>Complete web solutions for FiveM servers including websites and panels.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-plug"></i></div>
+          <h3>API Integrations</h3>
+          <p>Seamless third-party API integrations to extend your platform's capabilities.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Responsive Design</h3>
+          <p>Pixel-perfect responsive layouts that work flawlessly across all devices.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">About Me</span>
+        <h2 class="section-title">Meet the <span class="gradient-text">Developer</span></h2>
+        <p class="section-desc">Passionate about building exceptional digital products and turning ideas into reality.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <div class="team-avatar">
+            <img src="assets/cool-anime-boy-profile-portraits-logo-vector.jpg" alt="evv amine.dev">
+          </div>
+          <h3 class="team-name">evv amine.dev</h3>
+          <p class="team-role">Founder & Lead Developer</p>
+          <div class="team-social">
+            <a href="https://github.com/evvv-amine" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://discord.gg/8bZzDBst2w" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Pricing</span>
+        <h2 class="section-title">Let's Work on Your <span class="gradient-text">Project Together</span></h2>
+        <p class="section-desc">We discuss your project and agree on the price. These are our fixed starting packages for standard projects.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Starter</h3>
+            <div class="pricing-price">Custom</div>
+            <p>For small projects & landing pages</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Single Page Website</li>
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> Basic SEO</li>
+            <li><i class="fas fa-check"></i> 1 Revision</li>
+            <li><i class="fas fa-check"></i> Contact Form</li>
+            <li><i class="fas fa-check"></i> 1 Month Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline pricing-btn">Discuss Project</a>
+        </div>
+        <div class="pricing-card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="pricing-header">
+            <h3>Standard</h3>
+            <div class="pricing-price">Custom</div>
+            <p>For businesses & multi-page sites</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Multi-Page Website</li>
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> Advanced SEO</li>
+            <li><i class="fas fa-check"></i> 3 Revisions</li>
+            <li><i class="fas fa-check"></i> CMS Integration</li>
+            <li><i class="fas fa-check"></i> 3 Months Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary pricing-btn">Discuss Project</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Premium</h3>
+            <div class="pricing-price">Custom</div>
+            <p>For large-scale custom projects</p>
+          </div>
+          <ul class="pricing-features">
+            <li><i class="fas fa-check"></i> Custom Web Application</li>
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+            <li><i class="fas fa-check"></i> Full SEO Suite</li>
+            <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+            <li><i class="fas fa-check"></i> API Integrations</li>
+            <li><i class="fas fa-check"></i> 6 Months Support</li>
+            <li><i class="fas fa-check"></i> Priority Support</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline pricing-btn">Discuss Project</a>
+        </div>
+      </div>
+      <p class="pricing-note">Have a specific project in mind? <a href="#contact">Contact us</a> and we'll create a custom quote for you.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Testimonials</span>
+        <h2 class="section-title">What Our <span class="gradient-text">Clients Say</span></h2>
+        <p class="section-desc">Hear from our satisfied clients about their experience working with us.</p>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Amazing work! The team delivered a stunning website that exceeded our expectations. Highly professional and creative."</p>
+            <div class="testimonial-author">
+              <img src="https://ui-avatars.com/api/?name=John+D&background=3B82F6&color=fff&size=48" alt="John">
+              <div>
+                <h4>John D.</h4>
+                <span>CEO, TechStart</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Incredible attention to detail. Our landing page conversion rate improved by 40% after their redesign. Highly recommend!"</p>
+            <div class="testimonial-author">
+              <img src="https://ui-avatars.com/api/?name=Sarah+M&background=A855F7&color=fff&size=48" alt="Sarah">
+              <div>
+                <h4>Sarah M.</h4>
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"They built a custom dashboard for our analytics needs. Fast, reliable, and beautiful UI. Will work with them again!"</p>
+            <div class="testimonial-author">
+              <img src="https://ui-avatars.com/api/?name=Mike+R&background=10B981&color=fff&size=48" alt="Mike">
+              <div>
+                <h4>Mike R.</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"Professional, timely, and talented. Our Discord bot and web panel were delivered perfectly. Great communication throughout."</p>
+            <div class="testimonial-author">
+              <img src="https://ui-avatars.com/api/?name=Alex+K&background=F59E0B&color=fff&size=48" alt="Alex">
+              <div>
+                <h4>Alex K.</h4>
+                <span>Community Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text">"The team's UI/UX design skills are top-notch. They transformed our outdated site into a modern, engaging platform."</p>
+            <div class="testimonial-author">
+              <img src="https://ui-avatars.com/api/?name=Emily+L&background=EC4899&color=fff&size=48" alt="Emily">
+              <div>
+                <h4>Emily L.</h4>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <div class="carousel-dots" id="carousel-dots"></div>
+          <button class="carousel-btn" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Contact</span>
+        <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+        <p class="section-desc">Have a project in mind? Reach out and let's create something amazing together.</p>
+      </div>
+      <div class="contact-wrapper">
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="form-name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="form-email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="form-phone" placeholder="Phone Number (optional)" pattern="[+]?[0-9]*" inputmode="numeric">
+          </div>
+          <div class="form-group">
+            <select id="form-service">
+              <option value="">Select Service Type</option>
+              <option value="website">Website Development</option>
+              <option value="landing">Landing Page</option>
+              <option value="dashboard">Dashboard System</option>
+              <option value="uiux">UI/UX Design</option>
+              <option value="discord">Discord Bot</option>
+              <option value="fivem">FiveM Web Solution</option>
+              <option value="api">API Integration</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea id="form-message" rows="5" placeholder="Tell us about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+        <div class="contact-info">
+          <div class="contact-info-card">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>errorsupport1@gmail.com</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-comment-dots"></i>
+            <h4>Discord</h4>
+            <p>Join our server</p>
+          </div>
+          <div class="contact-info-card">
+            <i class="fas fa-clock"></i>
+            <h4>Response Time</h4>
+            <p>Within 24 hours</p>
+          </div>
+          <a href="https://discord.gg/8bZzDBst2w" target="_blank" class="btn btn-discord"><i class="fab fa-discord"></i> Contact via Discord</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="logo-code">&lt;/&gt;</span>
+            <span class="logo-text">evv amine.dev</span>
+          </a>
+          <p>Building modern websites and digital experiences. Professional web development solutions for businesses worldwide.</p>
+          <div class="footer-social">
+            <a href="https://github.com/evvv-amine" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="https://discord.gg/8bZzDBst2w" target="_blank" class="social-link"><i class="fab fa-discord"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Dashboard Systems</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Discord Bots</a></li>
+            <li><a href="#services">API Integrations</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 evv amine.dev. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
